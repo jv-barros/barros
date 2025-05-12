@@ -1,0 +1,72 @@
+2024-07-08 16:13:47,446 - Running script: C:\\Users\\lucas\\OneDrive\\automacoes\\ctcc_download_upload_files.py
+2024-07-08 16:24:12,427 - Script C:\\Users\\lucas\\OneDrive\\automacoes\\ctcc_download_upload_files.py executed successfully.
+2024-07-08 16:25:52,524 - Running script: C:\\Users\\lucas\\OneDrive\\automacoes\\ctccXmenu.py
+2024-07-08 16:29:07,654 - Script C:\\Users\\lucas\\OneDrive\\automacoes\\ctccXmenu.py executed successfully.
+2024-07-08 16:30:47,655 - Running script: C:\\Users\\lucas\\OneDrive\\automacoes\\spqVuca.py
+2024-07-08 16:56:39,264 - Script C:\\Users\\lucas\\OneDrive\\automacoes\\spqVuca.py executed successfully.
+2024-07-08 16:58:19,302 - Running script: C:\\Users\\lucas\\OneDrive\\automacoes\\spqManeZigpay.py
+2024-07-08 16:59:15,589 - Error running script C:\\Users\\lucas\\OneDrive\\automacoes\\spqManeZigpay.py: 0.08s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+Traceback (most recent call last):
+  File "c:\Users\lucas\.vscode\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\_vendored\pydevd\pydevd.py", line 3489, in <module>
+    main()
+  File "c:\Users\lucas\.vscode\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\_vendored\pydevd\pydevd.py", line 3482, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\lucas\.vscode\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\_vendored\pydevd\pydevd.py", line 2510, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\lucas\.vscode\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\_vendored\pydevd\pydevd.py", line 2517, in _exec
+    globals = pydevd_runpy.run_path(file, globals, '__main__')
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\lucas\.vscode\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\lucas\.vscode\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "c:\Users\lucas\.vscode\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "C:\\Users\\lucas\\OneDrive\\automacoes\\spqManeZigpay.py", line 221, in <module>
+    execute_script()
+  File "C:\\Users\\lucas\\OneDrive\\automacoes\\spqManeZigpay.py", line 196, in execute_script
+    baixar_relatorio_spq_mane(navegador)
+  File "C:\\Users\\lucas\\OneDrive\\automacoes\\spqManeZigpay.py", line 124, in baixar_relatorio_spq_mane
+    button2 = wait_and_find_element(navegador, By.XPATH, '/html/body/div/div/div/div/div/div[2]/div/div[2]/div[2]/button[2]')
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\\Users\\lucas\\OneDrive\\automacoes\\spqManeZigpay.py", line 36, in wait_and_find_element
+    return WebDriverWait(navegador, 10).until(EC.presence_of_element_located((by, value)))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lucas\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x0042C1C3+27395]
+	(No symbol) [0x003C3DC4]
+	(No symbol) [0x002C1B7F]
+	(No symbol) [0x00302C65]
+	(No symbol) [0x00302D3B]
+	(No symbol) [0x0033EC82]
+	(No symbol) [0x003239E4]
+	(No symbol) [0x0033CB24]
+	(No symbol) [0x00323736]
+	(No symbol) [0x002F7541]
+	(No symbol) [0x002F80BD]
+	GetHandleVerifier [0x006E3A93+2876371]
+	GetHandleVerifier [0x00737F5D+3221661]
+	GetHandleVerifier [0x004AD634+556916]
+	GetHandleVerifier [0x004B474C+585868]
+	(No symbol) [0x003CCE04]
+	(No symbol) [0x003C9818]
+	(No symbol) [0x003C99B7]
+	(No symbol) [0x003BBF0E]
+	BaseThreadInitThunk [0x76CAFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x771B80CE+286]
+	RtlGetAppContainerNamedObjectPath [0x771B809E+238]
+
+
+2024-07-08 17:00:05,602 - Running script: C:\\Users\\lucas\\OneDrive\\automacoes\\spqVeiChicoZigpay.py
+2024-07-08 17:01:22,706 - Script C:\\Users\\lucas\\OneDrive\\automacoes\\spqVeiChicoZigpay.py executed successfully.
+2024-07-08 17:02:12,707 - Running script: C:\\Users\\lucas\\OneDrive\\automacoes\\sendEmail.py
+2024-07-08 17:02:18,388 - Script C:\\Users\\lucas\\OneDrive\\automacoes\\sendEmail.py executed successfully.
